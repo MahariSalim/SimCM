@@ -1,9 +1,9 @@
-# ´chaine de markov a temps discret
+# Â´chaine de markov a temps discret
 # '@export
-# '@param z vecteur numérique représentant les étapes
-# ´@param mu vecteur numérique la distribution initiale
-# ´@param p matrice de transition
-# ´@param n nombre numérique représentant le nombre de pas
+# '@param z vecteur numÃ©rique reprÃ©sentant les Ã©tapes
+# Â´@param mu vecteur numÃ©rique la distribution initiale
+# Â´@param p matrice de transition
+# Â´@param n nombre numÃ©rique reprÃ©sentant le nombre de pas
 
 
 Simr <- fonction ( z , mu , P , n )
@@ -15,9 +15,8 @@ Simr <- fonction ( z , mu , P , n )
     y [ i + 1 ] <- rdist( z , P [ y [ i ],])
   }
   
-  plot( t , y , type  =  " b " , main  =  " graphe des états pour tous les temps de 0 à n " , pch = 5 , xlim = c( 0 , n ), ylim = c( 0 ,length( mu ) + 1 ), xlab  =  " temps " , ylab  =  " états " , col = " bleu" )
+  plot( t , y , type  =  " b " , main  =  " graphe des Ã©tats pour tous les temps de 0 Ã  n " , pch = 5 , xlim = c( 0 , n ), ylim = c( 0 ,length( mu ) + 1 ), xlab  =  " temps " , ylab  =  " Ã©tats " , col = " bleu" )
   par( mfrow  = c( 2 , 1 ))
   retour ( y )
-
-  
+}
 
