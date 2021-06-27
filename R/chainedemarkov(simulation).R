@@ -15,7 +15,7 @@ Simr  <- function ( z , mu , P , n )
     x [ i  +  1 ] <- rdist( z , P [ x [ i ],])
   }
 
-  plot( t , x  )
+  plot(t,x)
   return ( x )
 }
 
